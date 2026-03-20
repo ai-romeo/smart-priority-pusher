@@ -31,15 +31,14 @@
 | 去重 | ❌ | ✅ 语义去重 |
 | 个性化 | 有限 | 深度定制 |
 
-### vs erduo-skills
+### vs 传统信息聚合工具
 
-| 维度 | erduo-skills | Smart Priority Pusher |
-|------|-------------|----------------------|
-| 技能数量 | 4+ | 1（专注） |
-| 场景覆盖 | 多场景 | 专注信息推送 |
-| 智能化程度 | 中等 | 高（打分 + 优先级） |
-| 可配置性 | 分散 | 统一配置 |
-| 架构设计 | Master-Worker | 模块化管道 |
+| 维度 | 传统工具 | Smart Priority Pusher |
+|------|---------|----------------------|
+| 信息筛选 | 手动 | AI 智能打分 |
+| 内容排序 | 按时间 | 按优先级 |
+| 去重 | ❌ | ✅ 语义去重 |
+| 个性化 | 有限 | 深度定制 |
 
 **我们的优势：**
 - 🎯 **专注单一场景** - 把信息推送做到极致
@@ -401,7 +400,5 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 - OpenClaw 社区：[openclaw/openclaw](https://github.com/openclaw/openclaw)
 
 ---
-
-*基于 [erduo-skills](https://github.com/rookie-ricardo/erduo-skills) 的 daily-news-report 和 ak-rss-digest 优化设计*
 
 *Created with ❤️ by [ai-romeo](https://github.com/ai-romeo)*
