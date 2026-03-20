@@ -1,0 +1,22 @@
+{
+  "name": "smart-priority-pusher",
+  "version": "1.0.0",
+  "description": "每日 X (Twitter) 精选推送 - 25 个账号智能打分 Top 30",
+  "author": "ai-romeo",
+  "repository": "https://github.com/ai-romeo/smart-priority-pusher",
+  "license": "MIT",
+  "keywords": ["twitter", "x", "ai", "news", "priority", "push"],
+  "category": "信息聚合",
+  "scripts": {
+    "fetch": "python scripts/fetch_data.py",
+    "daily": "python scripts/x_fetch_daily.py"
+  },
+  "dependencies": [
+    "requests",
+    "feedparser",
+    "beautifulsoup4"
+  ],
+  "data_source": "https://github.com/ai-romeo/smart-priority-pusher/tree/main/data/daily",
+  "update_frequency": "daily",
+  "retention_days": 7
+}
