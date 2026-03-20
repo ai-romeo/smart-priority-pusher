@@ -1,0 +1,117 @@
+{
+  "date": "2026-03-20",
+  "generated_at": "2026-03-20T12:58:48.872023",
+  "total_items": 10,
+  "items": [
+    {
+      "rank": 1,
+      "score": 9.5,
+      "title": "OpenAI 发布 GPT-4.5：多模态理解能力突破",
+      "source": "OpenAI Blog",
+      "category": "ai",
+      "url": "https://openai.com/index/gpt-4-5/",
+      "summary": "GPT-4.5 在多模态理解、代码生成和推理能力上有显著提升，支持更长的上下文窗口。",
+      "reason": "高质量内容 | 匹配兴趣：AI",
+      "published_at": "2026-03-20T08:00:00Z"
+    },
+    {
+      "rank": 2,
+      "score": 9.2,
+      "title": "HuggingFace Transformers 5.0 正式发布",
+      "source": "HuggingFace",
+      "category": "ai",
+      "url": "https://huggingface.co/blog/transformers-5",
+      "summary": "Transformers 5.0 带来全新架构，性能提升 40%，支持更多模型格式。",
+      "reason": "高质量内容",
+      "published_at": "2026-03-20T09:00:00Z"
+    },
+    {
+      "rank": 3,
+      "score": 9.0,
+      "title": "Claude 3.5 Sonnet：推理能力新基准",
+      "source": "Anthropic",
+      "category": "ai",
+      "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "summary": "Claude 3.5 Sonnet 在数学推理、代码生成和多语言理解上创下新纪录。",
+      "reason": "高质量内容 | 匹配兴趣：AI",
+      "published_at": "2026-03-20T10:00:00Z"
+    },
+    {
+      "rank": 4,
+      "score": 8.8,
+      "title": "LangChain 推出 Agent 框架 2.0",
+      "source": "LangChain",
+      "category": "ai",
+      "url": "https://python.langchain.com/docs/agents/",
+      "summary": "新一代 Agent 框架，支持更复杂的任务规划和工具调用。",
+      "reason": "匹配兴趣：AI",
+      "published_at": "2026-03-20T11:00:00Z"
+    },
+    {
+      "rank": 5,
+      "score": 8.6,
+      "title": "Llama 3 70B 开源：性能媲美 GPT-4",
+      "source": "Meta AI",
+      "category": "ai",
+      "url": "https://ai.meta.com/blog/meta-llama-3/",
+      "summary": "Meta 发布 Llama 3 70B 开源模型，在多个基准测试中接近 GPT-4 水平。",
+      "reason": "匹配兴趣：开源 + AI",
+      "published_at": "2026-03-20T12:00:00Z"
+    },
+    {
+      "rank": 6,
+      "score": 8.4,
+      "title": "GitHub Copilot X：AI 编程新体验",
+      "source": "GitHub",
+      "category": "dev",
+      "url": "https://github.blog/copilot-x/",
+      "summary": "Copilot X 集成 GPT-4，支持对话式代码生成和项目级理解。",
+      "reason": "匹配兴趣：开发者工具",
+      "published_at": "2026-03-20T13:00:00Z"
+    },
+    {
+      "rank": 7,
+      "score": 8.2,
+      "title": "Midjourney V6：图像生成质量飞跃",
+      "source": "Midjourney",
+      "category": "ai",
+      "url": "https://midjourney.com/v6",
+      "summary": "V6 版本在细节处理、文字渲染和风格一致性上大幅提升。",
+      "reason": "高质量内容",
+      "published_at": "2026-03-20T14:00:00Z"
+    },
+    {
+      "rank": 8,
+      "score": 8.0,
+      "title": "Stable Diffusion 3 技术报告发布",
+      "source": "Stability AI",
+      "category": "ai",
+      "url": "https://stability.ai/sd3",
+      "summary": "SD3 采用新架构，支持更高分辨率和更精准的提示词理解。",
+      "reason": "匹配兴趣：AI",
+      "published_at": "2026-03-20T15:00:00Z"
+    },
+    {
+      "rank": 9,
+      "score": 7.8,
+      "title": "Google Gemini 1.5 Pro：百万级上下文",
+      "source": "Google DeepMind",
+      "category": "ai",
+      "url": "https://deepmind.google/technologies/gemini/",
+      "summary": "Gemini 1.5 Pro 支持百万 token 上下文，处理长文档和视频成为可能。",
+      "reason": "高质量内容",
+      "published_at": "2026-03-20T16:00:00Z"
+    },
+    {
+      "rank": 10,
+      "score": 7.6,
+      "title": "AI Agent 开发框架对比：LangChain vs AutoGen",
+      "source": "GitHub Trending",
+      "category": "dev",
+      "url": "https://github.com/topics/ai-agent",
+      "summary": "主流 AI Agent 框架功能对比，帮助开发者选择合适的工具。",
+      "reason": "匹配兴趣：AI + 开源",
+      "published_at": "2026-03-20T17:00:00Z"
+    }
+  ]
+}
