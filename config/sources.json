@@ -1,0 +1,40 @@
+{
+  "rss": [
+    {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/rss",
+      "category": "tech",
+      "weight": 1.2,
+      "enabled": true
+    },
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/feed",
+      "category": "product",
+      "weight": 1.0,
+      "enabled": true
+    },
+    {
+      "name": "Hugging Face Papers",
+      "url": "https://huggingface.co/papers/rss",
+      "category": "ai",
+      "weight": 1.3,
+      "enabled": true
+    }
+  ],
+  "api": [
+    {
+      "name": "GitHub Trending",
+      "endpoint": "https://api.github.com/search/repositories",
+      "params": {
+        "q": "stars:>100",
+        "sort": "stars",
+        "order": "desc"
+      },
+      "category": "dev",
+      "weight": 1.1,
+      "enabled": true
+    }
+  ],
+  "web": []
+}

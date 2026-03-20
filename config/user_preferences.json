@@ -1,0 +1,20 @@
+{
+  "interests": ["AI", "开源", "技术新闻", "产品发布", "开发者工具"],
+  "ignoreKeywords": ["营销", "广告", "付费课程", "推广"],
+  "minScore": 6.0,
+  "topN": 10,
+  "timeRange": "24h",
+  "categories": {
+    "tech": { "priority": 1.2, "displayName": "技术" },
+    "ai": { "priority": 1.5, "displayName": "人工智能" },
+    "product": { "priority": 1.0, "displayName": "产品" },
+    "dev": { "priority": 1.3, "displayName": "开发" },
+    "opensource": { "priority": 1.2, "displayName": "开源" }
+  },
+  "pushSettings": {
+    "channel": "feishu",
+    "format": "markdown",
+    "includeSummary": true,
+    "includeReason": true
+  }
+}
