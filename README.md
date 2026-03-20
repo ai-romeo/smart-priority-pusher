@@ -4,10 +4,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-green.svg)](https://github.com/openclaw/openclaw)
 
-**智能优先级推送** 是一个 AI Agent 技能，从多个信息源自动抓取内容，通过 AI 智能分析进行自动分类、质量打分、优先级排序，最终只推送最有价值的前 10 条内容。
+**Smart Priority Pusher** 是一个专注于解决"信息过载"问题的 AI Agent 技能。从多个信息源自动抓取内容，通过 AI 智能分析进行自动分类、质量打分、优先级排序，最终只推送最有价值的前 10 条内容。
 
-## ✨ 核心功能
+## ✨ 核心特性
 
 - 📥 **多源聚合** - RSS/Atom、REST API、网页抓取
 - 🏷️ **自动分类** - 按主题/领域智能归类
@@ -15,6 +16,38 @@
 - 🎯 **优先级排序** - 结合用户偏好加权
 - 🚀 **Top 10 推送** - 只推送最有价值的内容
 - 🔄 **去重缓存** - 7 天内不重复推送相同内容
+- 🤖 **OpenClaw Skill** - 原生支持 Agent 调用
+
+---
+
+## 🎯 为什么选择这个项目？
+
+### vs 传统 RSS 阅读器
+
+| 功能 | 传统 RSS | Smart Priority Pusher |
+|------|---------|----------------------|
+| 信息筛选 | 手动 | AI 智能打分 |
+| 内容排序 | 按时间 | 按优先级 |
+| 去重 | ❌ | ✅ 语义去重 |
+| 个性化 | 有限 | 深度定制 |
+
+### vs erduo-skills
+
+| 维度 | erduo-skills | Smart Priority Pusher |
+|------|-------------|----------------------|
+| 技能数量 | 4+ | 1（专注） |
+| 场景覆盖 | 多场景 | 专注信息推送 |
+| 智能化程度 | 中等 | 高（打分 + 优先级） |
+| 可配置性 | 分散 | 统一配置 |
+| 架构设计 | Master-Worker | 模块化管道 |
+
+**我们的优势：**
+- 🎯 **专注单一场景** - 把信息推送做到极致
+- 🤖 **AI 智能打分** - 10 分制综合评估
+- ⚙️ **高度可配置** - 统一配置中心
+- 🔌 **OpenClaw 原生** - 无缝集成 Agent 生态
+
+---
 
 ## 📋 效果演示
 
@@ -43,22 +76,26 @@
 ...
 ```
 
+---
+
 ## 🚀 快速开始
 
-### 1. 克隆项目
+### 方式 1：独立运行（CLI）
+
+#### 1. 克隆项目
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-priority-pusher.git
+git clone https://github.com/ai-romeo/smart-priority-pusher.git
 cd smart-priority-pusher
 ```
 
-### 2. 安装依赖
+#### 2. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. 配置信息源
+#### 3. 配置信息源
 
 编辑 `config/sources.json`：
 
@@ -76,7 +113,7 @@ pip install -r requirements.txt
 }
 ```
 
-### 4. 配置个人偏好
+#### 4. 配置个人偏好
 
 编辑 `config/user_preferences.json`：
 
@@ -88,7 +125,7 @@ pip install -r requirements.txt
 }
 ```
 
-### 5. 运行推送
+#### 5. 运行推送
 
 ```bash
 # 默认推送 Top 10
@@ -104,6 +141,69 @@ python scripts/push_priority.py --format json
 python scripts/push_priority.py --output report.md
 ```
 
+---
+
+### 方式 2：OpenClaw Skill 模式 ⭐
+
+#### 1. 安装到 OpenClaw
+
+```bash
+# 克隆到 OpenClaw 技能目录
+cd /path/to/openclaw/workspace
+git clone https://github.com/ai-romeo/smart-priority-pusher.git skills/smart-priority-pusher
+```
+
+#### 2. 在 OpenClaw 中调用
+
+**对话示例：**
+
+```
+用户：用 $smart-priority-pusher 拉取过去 24 小时的信息，筛选 Top 10 推送给我
+
+AI: 📊 今日精选 Top 10 (2026-03-20)
+    _过去 24 小时，从 3 个信息源抓取，去重后筛选出 Top 10_
+    
+    🥇 [9.2] GPT-4.5 泄露：多模态能力重大突破
+       来源：Hacker News | 分类：AI
+       💡 高质量内容 | 匹配兴趣：AI
+       🔗 https://...
+    ...
+```
+
+**高级用法：**
+
+```
+用户：只看 AI 相关内容，Top 5
+AI: [执行筛选，只推送 AI 分类的 Top 5]
+
+用户：获取过去 48 小时 8 分以上的内容
+AI: [执行高分内容筛选]
+```
+
+#### 3. 技能配置
+
+技能定义文件：`skills/smart-priority-pusher/SKILL.md`
+
+```markdown
+# Smart Priority Pusher Skill
+
+> 多源信息聚合 → 智能分类打分 → 优先级推送 Top 10
+
+## 调用方式
+
+- CLI: `python scripts/push_priority.py`
+- Agent: `$smart-priority-pusher`
+
+## 参数
+
+- --hours: 时间范围（小时）
+- --top: 推送数量
+- --category: 指定类别
+- --min-score: 最低分数
+```
+
+---
+
 ## 📂 项目结构
 
 ```
@@ -111,15 +211,18 @@ smart-priority-pusher/
 ├── README.md                 # 项目说明
 ├── LICENSE                   # MIT 许可证
 ├── requirements.txt          # Python 依赖
+├── .gitignore               # Git 忽略文件
 ├── config/
-│   ├── sources.json          # 信息源配置
+│   ├── sources.json         # 信息源配置
 │   └── user_preferences.json # 用户偏好配置
 ├── scripts/
-│   ├── push_priority.py      # 主推送脚本
-│   └── demo_push.py          # 演示脚本（模拟数据）
+│   ├── push_priority.py     # 主推送脚本
+│   └── demo_push.py         # 演示脚本（模拟数据）
 └── cache/                    # 缓存目录（自动生成）
     └── pushed_items.json
 ```
+
+---
 
 ## ⚙️ 配置说明
 
@@ -178,6 +281,8 @@ smart-priority-pusher/
 }
 ```
 
+---
+
 ## 📊 打分算法
 
 **综合评分公式：**
@@ -192,6 +297,16 @@ smart-priority-pusher/
 | 时效性 | 20% | 发布时间越新分数越高 |
 | 相关性 | 25% | 与用户兴趣匹配程度 |
 | 来源可信度 | 15% | 信息源权威性 |
+
+**评分维度详解：**
+
+- **基础分 (0-10)**: AI 根据内容质量评估
+- **源权重 (0.5-2.0)**: 信息源可信度（Hacker News=1.2, GitHub=1.1）
+- **类别优先级 (0.5-2.0)**: 用户偏好加权
+- **时效加分 (0-2)**: 2 小时内 +2.0, 24 小时后 +0.0
+- **相关性加分 (0-3)**: 匹配兴趣关键词数量
+
+---
 
 ## 🔧 命令行参数
 
@@ -208,6 +323,21 @@ python scripts/push_priority.py [OPTIONS]
   --help            显示帮助信息
 ```
 
+**使用示例：**
+
+```bash
+# 只看 AI 相关内容，Top 5
+python scripts/push_priority.py --category ai --top 5
+
+# 过去 48 小时，8 分以上内容
+python scripts/push_priority.py --hours 48 --min-score 8.0
+
+# 输出 JSON 到文件
+python scripts/push_priority.py --format json --output report.json
+```
+
+---
+
 ## ⏰ 定时任务
 
 配置 cron 定时执行：
@@ -220,25 +350,11 @@ python scripts/push_priority.py [OPTIONS]
 0 */4 * * * cd /path/to/smart-priority-pusher && python scripts/push_priority.py --min-score 8.0
 ```
 
-## 📝 使用示例
+**OpenClaw 定时任务：**
 
-### 示例 1：只看 AI 相关内容
+在 OpenClaw 中配置 cron，自动调用技能推送。
 
-```bash
-python scripts/push_priority.py --category ai --top 5
-```
-
-### 示例 2：获取过去 48 小时内容
-
-```bash
-python scripts/push_priority.py --hours 48 --format json --output report.json
-```
-
-### 示例 3：只推送 8 分以上高质量内容
-
-```bash
-python scripts/push_priority.py --min-score 8.0 --top 3
-```
+---
 
 ## 🔌 扩展开发
 
@@ -250,33 +366,42 @@ python scripts/push_priority.py --min-score 8.0 --top 3
 
 继承 `scripts/push_priority.py` 中的 `Scorer` 类，实现自定义评分算法。
 
-### 集成到 OpenClaw
+### 集成到其他平台
 
-将项目放入 OpenClaw 的 `skills/` 目录：
+实现 `Pusher` 接口，支持更多推送渠道：
+- ✅ Feishu/飞书
+- ✅ 本地文件
+- 🔄 微信（开发中）
+- 🔄 邮件（开发中）
 
-```bash
-cp -r smart-priority-pusher /path/to/openclaw/workspace/skills/
-```
-
-然后在 OpenClaw 中调用：
-
-```
-用 $smart-priority-pusher 拉取过去 24 小时的信息，筛选 Top 10 推送给我
-```
+---
 
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
 
+---
+
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request！
 
+**贡献方向：**
+- 添加新的信息源
+- 优化打分算法
+- 支持更多推送渠道
+- 改进用户配置体验
+
+---
+
 ## 📬 联系方式
 
-- GitHub Issues: [提交问题](https://github.com/YOUR_USERNAME/smart-priority-pusher/issues)
-- 项目主页：[GitHub](https://github.com/YOUR_USERNAME/smart-priority-pusher)
+- GitHub Issues: [提交问题](https://github.com/ai-romeo/smart-priority-pusher/issues)
+- 项目主页：[GitHub](https://github.com/ai-romeo/smart-priority-pusher)
+- OpenClaw 社区：[openclaw/openclaw](https://github.com/openclaw/openclaw)
 
 ---
 
 *基于 [erduo-skills](https://github.com/rookie-ricardo/erduo-skills) 的 daily-news-report 和 ak-rss-digest 优化设计*
+
+*Created with ❤️ by [ai-romeo](https://github.com/ai-romeo)*
