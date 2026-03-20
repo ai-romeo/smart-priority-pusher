@@ -1,26 +1,42 @@
 # Smart Priority Pusher / 智能优先级推送
 
-> 🤖 AI Agent Skill - 每日 X (Twitter) 精选推送
+> 📊 AI Agent Skill - 每日 X (Twitter) 精选推送 · 飞书自动推送
 
 ## 技能简介
 
-从 25 个精选 X 账号（AI/创业/个人成长/prompt）自动抓取每日推文，智能打分排序，推送 Top 30 精选内容。
+从 25 个精选 X 账号（AI/创业/个人成长/prompt）自动抓取每日推文，智能打分排序，**订阅 GitHub 数据并自动推送到飞书群**。
 
 **核心优势：**
-- 📊 数据集中管理 - 所有数据存储在 GitHub 仓库
-- 🚀 开箱即用 - 用户无需配置，直接复制 skill 即可使用
-- 🔄 每日自动更新 - 保留最近 7 天数据
-- 🎯 智能排序 - 按质量分数优先级推送
+- 📊 **订阅 GitHub** - 从 ai-romeo/smart-priority-pusher 获取数据
+- 🚀 **开箱即用** - 用户无需配置，直接复制 skill 即可使用
+- 🔄 **每日自动推送** - 定时任务自动推送到飞书群
+- 🎯 **智能排序** - 按质量分数优先级推送 Top 10-30
 
 ## 使用方法
 
-### 方式 1：OpenClaw 调用
+### 方式 1：飞书自动推送（推荐）
+
+**配置定时任务：**
+
+```bash
+# 每天早上 8 点自动推送到飞书群
+0 8 * * * cd /path/to/smart-priority-pusher && \
+  python scripts/feishu_push.py --top 10
+```
+
+**手动推送：**
+
+```bash
+python scripts/feishu_push.py --top 10
+```
+
+### 方式 2：OpenClaw 调用
 
 ```
 用 $smart-priority-pusher 获取今天的 AI 精选
 ```
 
-### 方式 2：命令行
+### 方式 3：命令行
 
 ```bash
 # 获取最新数据
@@ -33,7 +49,7 @@ python scripts/fetch_data.py --date 2026-03-20
 python scripts/fetch_data.py --json --top 10
 ```
 
-### 方式 3：直接读取
+### 方式 4：直接读取
 
 ```bash
 # 克隆仓库
