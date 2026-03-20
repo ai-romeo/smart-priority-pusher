@@ -1,0 +1,188 @@
+{
+  "sources": [
+    {
+      "type": "创业",
+      "name": "Garry Tan",
+      "url": "https://x.com/garrytan",
+      "username": "garrytan",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Steven Bartlett",
+      "url": "https://x.com/StevenBartlett",
+      "username": "StevenBartlett",
+      "enabled": true
+    },
+    {
+      "type": "storyteller",
+      "name": "Ish Verduzco",
+      "url": "https://x.com/ishverduzco",
+      "username": "ishverduzco",
+      "enabled": true
+    },
+    {
+      "type": "prompt",
+      "name": "Oogie",
+      "url": "https://x.com/oggii_0",
+      "username": "oggii_0",
+      "enabled": true
+    },
+    {
+      "type": "创业",
+      "name": "Paul Graham",
+      "url": "https://x.com/paulg",
+      "username": "paulg",
+      "enabled": true
+    },
+    {
+      "type": "AI",
+      "name": "Josh Woodward",
+      "url": "https://x.com/joshwoodward",
+      "username": "joshwoodward",
+      "enabled": true
+    },
+    {
+      "type": "prompt",
+      "name": "TechieSA",
+      "url": "https://x.com/TechieBySA",
+      "username": "TechieBySA",
+      "enabled": true
+    },
+    {
+      "type": "AI 自媒体",
+      "name": "向阳乔木",
+      "url": "https://x.com/vista8",
+      "username": "vista8",
+      "enabled": true
+    },
+    {
+      "type": "prompt",
+      "name": "Amira Zairi",
+      "url": "https://x.com/azed_ai",
+      "username": "azed_ai",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Adam Grant",
+      "url": "https://x.com/AdamMGrant",
+      "username": "AdamMGrant",
+      "enabled": true
+    },
+    {
+      "type": "AI 自媒体",
+      "name": "李继刚",
+      "url": "https://x.com/lijigang",
+      "username": "lijigang",
+      "enabled": true
+    },
+    {
+      "type": "AI 自媒体",
+      "name": "凡人小北",
+      "url": "https://x.com/frxiaobei",
+      "username": "frxiaobei",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Chris Williamson",
+      "url": "https://x.com/ChrisWillx",
+      "username": "ChrisWillx",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Alex Hormozi",
+      "url": "https://x.com/AlexHormozi",
+      "username": "AlexHormozi",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Andrew D. Huberman, Ph.D",
+      "url": "https://x.com/hubermanlab",
+      "username": "hubermanlab",
+      "enabled": true
+    },
+    {
+      "type": "storyteller",
+      "name": "Lulu Cheng Meservey",
+      "url": "https://x.com/lulumeservey",
+      "username": "lulumeservey",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "DAN KOE",
+      "url": "https://x.com/thedankoe",
+      "username": "thedankoe",
+      "enabled": true
+    },
+    {
+      "type": "AI 自媒体",
+      "name": "Orange AI",
+      "url": "https://x.com/oran_ge",
+      "username": "oran_ge",
+      "enabled": true
+    },
+    {
+      "type": "AI 自媒体",
+      "name": "李继刚",
+      "url": "https://x.com/lijigang",
+      "username": "lijigang",
+      "enabled": true
+    },
+    {
+      "type": "AI builder",
+      "name": "Zara Zhang",
+      "url": "https://x.com/zarazhangrui",
+      "username": "zarazhangrui",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Naval",
+      "url": "https://x.com/naval",
+      "username": "naval",
+      "enabled": true
+    },
+    {
+      "type": "AI",
+      "name": "Andrej Karpathy",
+      "url": "https://x.com/karpathy",
+      "username": "karpathy",
+      "enabled": true
+    },
+    {
+      "type": "个人成长",
+      "name": "Ray Dalio",
+      "url": "https://x.com/RayDalio",
+      "username": "RayDalio",
+      "enabled": true
+    },
+    {
+      "type": "AI",
+      "name": "John Rush",
+      "url": "https://x.com/johnrushx",
+      "username": "johnrushx",
+      "enabled": true
+    },
+    {
+      "type": "AI 自媒体",
+      "name": "宝玉",
+      "url": "https://x.com/dotey",
+      "username": "dotey",
+      "enabled": true
+    }
+  ],
+  "categories": {
+    "创业": { "priority": 1.2, "displayName": "创业" },
+    "个人成长": { "priority": 1.0, "displayName": "个人成长" },
+    "AI": { "priority": 1.5, "displayName": "人工智能" },
+    "AI 自媒体": { "priority": 1.3, "displayName": "AI 自媒体" },
+    "AI builder": { "priority": 1.4, "displayName": "AI 开发者" },
+    "prompt": { "priority": 1.2, "displayName": "Prompt 工程" },
+    "storyteller": { "priority": 1.0, "displayName": "故事创作者" }
+  }
+}

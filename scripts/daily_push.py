@@ -30,7 +30,8 @@ def generate_daily_items(date: str = None) -> list:
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d")
     
-    # 模拟真实数据（实际使用时替换为真实抓取）
+    # 从 X 信息源抓取（实际使用时调用 x_fetch.py）
+    # 这里使用模拟数据演示
     items = [
         {
             "rank": 1,
