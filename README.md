@@ -401,4 +401,6 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ---
 
+*Inspired by [erduo-skills](https://github.com/rookie-ricardo/erduo-skills) daily-news-report & ak-rss-digest*
+
 *Created with ❤️ by [ai-romeo](https://github.com/ai-romeo)*
